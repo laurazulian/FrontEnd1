@@ -1,0 +1,45 @@
+.container {
+    height: 200px;
+}
+.centrado { position: relative;
+            width: 100px;
+            height: 146.37px;
+            left: 670px;
+            top: 20.91px;
+}
+h1{
+    color: #005677;
+    text-transform: uppercase;
+    background: #C4C4C4;
+    text-align:center;
+    letter-spacing: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{ 
+    background: #C4C4C4;
+    color: #005677;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+.fechas{
+    font-style: italic;
+    font-weight: bold;
+}
+.años{
+    font-weight: bold;
+}
+.final{
+    position: relative;
+    width: 1440px;
+    height: 37px;
+    left: 0px;
+    top: 987px;
+    background: #005677;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    color: #FFFF;
+    letter-spacing: 10px;
+}
