@@ -1,0 +1,204 @@
+.container{
+    max-width: 1024px;
+    font-family: 'Roboto', sans-serif;
+}
+/*Barrita marrón de arriba*/
+.barritatop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    height: 20px;
+}
+.idioma{
+    display: flex;
+    color: white;
+    font-size: 14px;
+    padding-right: 90px;
+}
+
+/*Barrita amarilla*/
+.ofertascomederos{
+    color: white;
+    font-size: 14px;
+    padding-left: 5%; 
+}
+.español{
+    padding-right: 10px;
+}
+.barritamarilla{
+    display: flex;
+    background-color: #F0A83E;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    padding-right: 10px;
+}
+.opcion1 , .opcion2, .opcion3{
+    padding-right: 10px;
+}
+
+/*Barra con foto verde de fondo*/
+
+.fondoverde{
+    background-image: url(img/Encabezado.png);
+    display: flex;
+    height: 65vh;
+    justify-content: center;
+    background-repeat: no-repeat;
+    }
+ .titulo1{
+     display: flex;
+     background-color: #FFFFFF;
+    position: absolute;
+     padding: 20px 40px;
+     margin-left: 11%;
+     margin-top: 8%;*/
+     font-weight: bold;
+     font-size: 20px;
+ }
+ .titulo2{
+     display: flex;
+     position: absolute;
+     margin-top: 15%;
+     margin-left: 15%;
+ }
+ .titulo3{
+     display: flex;
+    position: absolute;
+     background-color: #F0A83E;
+     margin-top: 18%;
+     margin-left: 18%;
+     padding: 10px 20px;
+     color: #FFFFFF;
+ }
+
+ /*Ahora vamos con el coso del medio*/
+
+ .destacados{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10vh;
+ }
+ .destacados h2{
+     font-weight: bold;
+     font-size: 35px;
+     color: #3C2313;
+ }
+ .destacados2{
+     display: flex;
+     justify-content: center;
+     justify-content: space-around;
+     color: #666666;
+     padding-bottom: 10vh;
+ }
+
+ /*Acá vienen las benditas cards*/
+/*Detalle: no pude subir los precios sobre la imagen*/
+ .imagencard{
+     display: flex;
+     justify-content: space-around;
+   }
+.card1{
+   display: flex;
+   justify-content: space-around;
+    color: #3C2313;
+    font-weight: bold;
+}
+.precios{
+    display: flex;
+    justify-content: space-around;
+    color: #F0A83E;
+    font-weight: bold;
+    padding-bottom: 15vh;
+}
+
+/*Formulario*/
+.containerformulario{
+    display: flex;
+    flex-direction: column;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contacto{
+    display: flex;
+    justify-content: center;
+    color: #3C2313;
+    font-size: 40px;
+    font-weight: bold;
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.input{
+    background-color:#3C2313;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 50px;
+
+}
+
+/*La barra amarilla de abajo*/
+.barramarillabajo{
+    display: flex;
+    background-color:#F0A83E;
+    color: white;
+    padding-top: 10px;
+    align-items: center;
+}
+#iconomail{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*barramarronfinal*/
+.barramarronfinal{
+    background-color: #3C2313;
+    display: flex;
+    justify-content: space-between;
+}
+.iconosfinales{
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+.logofinal{
+    display: flex;
+    align-items: center;
+}
+#boton1{
+    background-color: #8A8787;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 30px
+}
+#boton2{
+   background-color: #F0A83E;
+   border-radius: 15px;
+    color: white;
+    padding: 10px 30px
+}
+/*La última de las barritas*/
+.ultimabarrita{
+    background-color: #222222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+}
+
+@media (max-width: 460px) and (orientation: landscape){
+  .barritatop{
+      display: none;
+  }
+}
