@@ -55,7 +55,7 @@
     position: absolute;
      padding: 20px 40px;
      margin-left: 11%;
-     margin-top: 8%;*/
+     margin-top: 8%;
      font-weight: bold;
      font-size: 20px;
  }
@@ -197,8 +197,47 @@
     height: 5vh;
 }
 
-@media (max-width: 460px) and (orientation: landscape){
-  .barritatop{
-      display: none;
-  }
-}
+@media (max-width: 460px) {
+    .barritatop {
+        display: none; 
+    }
+    .idioma{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+    .fondoverde{
+        display: flex;
+        flex-direction: column;
+        }
+    .titulo1{
+            top: 10vh;
+            font-weight: bold;
+            font-size: 20px;
+            align-self: flex-end;
+    }
+    .titulo2{
+        top: 15vh;
+        font-size: 15px;
+    }
+    .titulo3{
+        top: 20vh;
+    }
+/*Acá hay un error arrastrado del HTML: armé imágenes, detalle y precios como contenedores diferentes y en lo horizontal quedaron alineados pero ahora no los puedo superponer*/
+    .imagencard{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card1{
+        flex-direction: column;
+        align-items: center;
+        z-index: 40;
+     }
+     .precios{
+        flex-direction: column;
+        align-items: center;
+     }
+
+    }
+
