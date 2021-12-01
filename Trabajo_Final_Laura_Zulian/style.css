@@ -1,12 +1,13 @@
-* { 
+/** { 
     box-sizing: border-box;
-}
+}*/
 .conteiner {
     max-width: 1440px;
     font-family: 'Be Vietnam Pro', sans-serif;
     margin-left: 5vw;
     margin-right: 5vh;
 }
+/*Header*/
 .header{
     display: flex;
     justify-content: space-around;
@@ -35,6 +36,7 @@ justify-content: space-evenly;
     background-color: wheat;
 }
 
+/*Main primer sección*/
 .columnfirst{
     display: flex;
     align-items: center;
@@ -44,14 +46,21 @@ justify-content: space-evenly;
 }
 
 h1{
+    display: flex;
     font-size: 58px;
     font-weight: 700px;
 }
 .paragraphbold{
+    display: flex;
     font-size: 20px;
     font-weight: bold;
     color: #000000;
 }
+.imagen{
+    width: 50vw;
+}
+
+/*Main segunda sección*/
 .columnsecond{
     display: flex;
     padding-top: 15vh;
@@ -92,6 +101,31 @@ h2{
     align-items: center;
     padding-bottom: 10vh;
 }
+.numberone::before{
+    content: "1";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.numbertwo::before{
+    content: "2";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.numberthree::before{
+    content: "3";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+/*Cards*/
 .names{
     display: flex;
     justify-content: center;
@@ -109,14 +143,14 @@ h2{
     display: flex;
     padding-left: 10vw;
     position: absolute;
-    top: 225vh;
+    top: 230vh;
 }
 .fondo{
-    background-color: grey;
+    background-color: #FAFAFA;
     padding-bottom: 10vh;
     margin-right: 10px;
 }
-
+/*Footer*/
 .footer1{
     display: flex;
     background-color: #F3613C;
@@ -167,21 +201,171 @@ h2{
     padding: 10px 20px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 380px) {
+   
+    .conteiner {
+        margin: 2%;
+    }
+    .header{
+            display: flex ;
+            justify-content: space-between;
+            align-items: center;
+        }
+   /*Este pequeño código lo dejo porque me creó una rayita del menu hamburguesa pero no pude crear las otras
+        .ancho
+        display: flex;
+        width: 10vw;
+        height: 0.5vh;
+        background-color: black;
+    }
+   */
     .options{
         display: none;
     }
+
     .botonnaranjaprimero{
         display: none;
     }
     .logo-top{
         display: flex;
-        justify-content: flex-start;
         padding-top: 5vh;
     }
     .columnfirst{
         display: flex;
         flex-direction: column-reverse;
-        
     }
+    .h1{
+        display: flex;
+        align-items: center;
+        flex-direction: column ;
+    }
+    h1{
+        font-size: 40px;
+        display: flex;
+        align-self: center;
+    }
+    .imagen{
+        width: 90vw;
+        margin-left: 15vw;
+        margin-top: 10vh;
+    }
+    .paragraphbold{
+        display: flex;
+        color: #B3B2B7;
+        font-size: 15px;
+        align-items: center;
+    }
+.boton_naranja_dos{
+    display: flex;
+    align-items: center;
+}
+
+.columnsecond{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vh;
+}
+h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h4{
+    background-color:#ffb6af;
+
+}
+.numberone::before{
+    content: "1";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.numbertwo::before{
+    content: "2";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.numberthree::before{
+    content: "3";
+    background-color:#F3613C;
+    color:white ;
+    padding: 5px 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.cardsnone{
+    display: none;
+
+}
+.icon{
+    position: absolute;
+    margin-left: 15vw;
+    margin-top: 5vh;
+}
+.names{
+    display: flex;
+    justify-content: center;
+    padding-top: 2vh;
+    align-items: center;
+}
+
+.fondo{
+    background-color: #FAFAFA;
+    padding-top: 5vh;
+
+}
+.footer1{
+    display: flex;
+    flex-direction: column;
+    background-color: #F3613C;
+    align-items: center; 
+    padding-bottom: 5vh;
+}
+
+.h2white{
+    width: 80vw;
+}
+#botonblanco{
+    background-color: white;
+    color: orange;
+}
+.footer2{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+} 
+.paragraphfinal{
+    display: none;
+}
+.listasfinales{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    font-size: 12px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+.footer-redes{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.iconsredes{
+    margin-bottom: 3vh;
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+}
+.logofinal{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
 }
