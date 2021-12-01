@@ -1,11 +1,11 @@
-/** { 
-    box-sizing: border-box;
-}*/
+
 .conteiner {
     max-width: 1440px;
-    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Be Vietnam', sans-serif;
     margin-left: 5vw;
     margin-right: 5vh;
+    background-image: url(img/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
 }
 /*Header*/
 .header{
@@ -20,12 +20,13 @@
 .options{
 display: flex;
 justify-content: space-evenly;
+color: #242E52;
 }
 
 .botonnaranja{
     border-radius: 50px;
     border: none;
-    box-shadow: 1px 1px 3px 0px black;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
     background-color: #F3603B;
     padding: 10px 20px;
     color: white;
@@ -34,6 +35,9 @@ justify-content: space-evenly;
 
 .botonnaranja:hover{
     background-color: wheat;
+}
+#menu_hamburguesa{
+    display:none
 }
 
 /*Main primer sección*/
@@ -48,13 +52,13 @@ justify-content: space-evenly;
 h1{
     display: flex;
     font-size: 58px;
-    font-weight: 700px;
+    font-weight: bold;
+    color: #232C50
 }
 .paragraphbold{
     display: flex;
     font-size: 20px;
-    font-weight: bold;
-    color: #000000;
+    color:#242E52
 }
 .imagen{
     width: 50vw;
@@ -70,9 +74,11 @@ h1{
     padding-right: 10vw;
 }
 h2{
-    color:  rgb (29, 30, 37);
+    color: #242E52;
     font-size: 36px;
-    font-weight: bold;
+}
+h4{
+    color: #323851;
 }
 
 .articletwo{
@@ -134,13 +140,13 @@ h2{
 .paragraphcards{
     display: flex;
     text-align: center;
+    color: #B9B9C1;
 }
 .botonfinal{
     display: flex;
     justify-content: center;
 }
 .icon{
-    display: flex;
     padding-left: 10vw;
     position: absolute;
     top: 230vh;
@@ -150,6 +156,8 @@ h2{
     padding-bottom: 10vh;
     margin-right: 10px;
 }
+
+
 /*Footer*/
 .footer1{
     display: flex;
@@ -158,12 +166,23 @@ h2{
     justify-content: space-around;
     margin-top: 10vh;
 }
+
+#botonblanco{
+    background-color: white;
+    color: orange;
+    border-radius: 50px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    }
+
 .footer2{
     background-color: #1E1E26;
     display: flex;
     color: white;
     padding-top: 5vh;
     justify-content: space-around;
+    padding-bottom: 5vh;
 
 }
 .h2white{
@@ -178,6 +197,11 @@ h2{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+.listasfinales{
+    display: flex;
+    justify-content: space-around;
+    width: 40vw;
 }
 
 .formfinal{
@@ -200,6 +224,16 @@ h2{
     border: none;
     padding: 10px 20px;
 }
+.iconsredes{
+    margin-bottom: 3vh;
+    display: flex;
+    width: 15vw;
+    justify-content: space-around;
+    }
+    
+input:focus{
+    color:blue;
+}
 
 @media (max-width: 380px) {
    
@@ -211,7 +245,8 @@ h2{
             justify-content: space-between;
             align-items: center;
         }
-   /*Este pequeño código lo dejo porque me creó una rayita del menu hamburguesa pero no pude crear las otras
+        
+   /*Este pequeño código lo dejo porque me creó una rayita del menu hamburguesa pero no pude crear las otras así que usé un ícono.
         .ancho
         display: flex;
         width: 10vw;
@@ -229,6 +264,9 @@ h2{
     .logo-top{
         display: flex;
         padding-top: 5vh;
+    }
+    #menu_hamburguesa{
+        display: flex;
     }
     .columnfirst{
         display: flex;
