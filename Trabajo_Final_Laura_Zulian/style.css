@@ -99,7 +99,7 @@ h4{
 .articlethree{
     display: flex;
     justify-content: center;
-    padding-bottom: 20vh;
+    padding-bottom: 10vh;
 }
 .articlefour{
     display: flex;
@@ -148,8 +148,8 @@ h4{
 }
 .icon{
     padding-left: 10vw;
-    position: absolute;
-    top: 230vh;
+    position: relative;
+    top: 10vh;
 }
 .fondo{
     background-color: #FAFAFA;
@@ -344,9 +344,8 @@ h4{
 
 }
 .icon{
-    position: absolute;
+    position: relative;
     margin-left: 15vw;
-    margin-top: 5vh;
 }
 .names{
     display: flex;
